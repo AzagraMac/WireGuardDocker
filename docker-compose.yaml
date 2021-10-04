@@ -1,8 +1,8 @@
---
+---
 version: "2.1"
 services:
   wireguard:
-    image: ghcr.io/linuxserver/wireguard
+    image: ghcr.io/linuxserver/wireguard:arm64v8-latest
     container_name: wireguard
     cap_add:
       - NET_ADMIN
@@ -23,4 +23,3 @@ services:
     sysctls:
       - net.ipv4.conf.all.src_valid_mark=1
     restart: always
-    
