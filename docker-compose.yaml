@@ -2,7 +2,7 @@
 version: "2.1"
 services:
   wireguard:
-    image: ghcr.io/linuxserver/wireguard:arm64v8-latest
+    image: ghcr.io/linuxserver/wireguard:amd64-latest
     container_name: wireguard
     cap_add:
       - NET_ADMIN
@@ -16,7 +16,7 @@ services:
       - PEERDNS=1.1.1.1, 1.0.0.1
       - ALLOWEDIPS=0.0.0.0/0
     volumes:
-      - /root/docker/wireguard/config:/config
+      - /root/docker/wireguard/appdata/config:/config
       - /lib/modules:/lib/modules
     ports:
       - 51820:51820/udp
