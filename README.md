@@ -21,3 +21,7 @@ Docker container Wireguard VPN server
 ### Monitor traffic from a connected client,
 - Access to the container: `docker exec -it wireguard bash` 
 - And once inside, we execute: `wg show`
+
+### Download App
+- Android: https://play.google.com/store/apps/details?id=com.wireguard.android
+- iPhone/iPad: https://apps.apple.com/es/app/wireguard/id1441195209
