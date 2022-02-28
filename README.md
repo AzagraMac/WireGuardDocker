@@ -25,3 +25,7 @@ Docker container Wireguard VPN server
 ### Download App
 - Android: https://play.google.com/store/apps/details?id=com.wireguard.android
 - iPhone/iPad: https://apps.apple.com/es/app/wireguard/id1441195209
+
+### Config client
+`docker exec -it wireguard /app/show-peer 1`
+Change the number to peer configure.
