@@ -27,5 +27,7 @@ Docker container Wireguard VPN server
 - iPhone/iPad: https://apps.apple.com/es/app/wireguard/id1441195209
 
 ### Config client
-`docker exec -it wireguard /app/show-peer 1`
+`
+docker exec -it wireguard /app/show-peer 1
+`
 Change the number to peer configure.
