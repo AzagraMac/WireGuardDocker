@@ -13,7 +13,9 @@ services:
       - TZ=Europe/Madrid
       - SERVERPORT=51820
       - PEERS=3
-      - PEERDNS=1.1.1.1, 1.0.0.1
+      - PEERDNS=1.1.1.1,1.0.0.1
+      - SERVERURL=MY_DOMAIN_DDNS
+      - INTERNAL_SUBNET=10.5.1.0/24
       - ALLOWEDIPS=0.0.0.0/0
     volumes:
       - /root/docker/wireguard/config:/config
